@@ -5,6 +5,5 @@ public class ListaDeComandos_Git {
 	//para hacer commit: git commit -m "mensaje para ver los cambios"
 	//para hacer push: git push
 	//prueba
-	//nir
 	//hola
 }
