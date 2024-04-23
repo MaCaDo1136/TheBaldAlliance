@@ -14,10 +14,10 @@ public class Main {
         ArrayList<UserRegistration> userList = new ArrayList<>();
         userList.add(new UserRegistration("Albertus", "1234MCD"));
 
-        SaveFile(userList);
+        AddUser(userList);
     }
 
-    private static void SaveFile(ArrayList<UserRegistration> userlist) {
+    private static void AddUser(ArrayList<UserRegistration> userlist) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(
                     "C:\\Users\\Mario\\TheBaldAlliance\\src\\FirstWindow\\Database\\Db_Users.txt", true));
