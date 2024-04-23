@@ -9,6 +9,14 @@ public class UserRegistration {
         this.password = password;
     }
 
+    public static String initUsername(String username) {
+        return username;
+    }
+
+    public static String initPassword(String password) {
+        return password;
+    }
+
     public void setUsername(String username) {
         this.username = username;
     }
