@@ -167,7 +167,7 @@ public class MainWidnow {
 		
 		JLabel UsernameSignUp_MainWindow = new JLabel("USERNAME:");
 		UsernameSignUp_MainWindow.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		UsernameSignUp_MainWindow.setBounds(45, 83, 91, 14);
+		UsernameSignUp_MainWindow.setBounds(56, 83, 91, 14);
 		SignUpPanel_MainWindow.add(UsernameSignUp_MainWindow);
 		
 		UsernameTextField_SignUp_MainWindow = new JTextField();
@@ -184,7 +184,7 @@ public class MainWidnow {
 		
 		JLabel password_SignUp_MainWindow = new JLabel("PASSWORD:");
 		password_SignUp_MainWindow.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		password_SignUp_MainWindow.setBounds(45, 140, 91, 14);
+		password_SignUp_MainWindow.setBounds(56, 140, 91, 14);
 		SignUpPanel_MainWindow.add(password_SignUp_MainWindow);
 			//Lógica del Botón de Sign Up
 		JButton btn_SignUp_MainWindow = new JButton("Sign Up");
@@ -211,6 +211,10 @@ public class MainWidnow {
 		JLabel Icon01_MainWindow_1 = new JLabel("");
 		Icon01_MainWindow_1.setBounds(10, 47, 46, 30);
 		SignUpPanel_MainWindow.add(Icon01_MainWindow_1);
+		
+		JLabel Icon01_MainWindow_2 = new JLabel("");
+		Icon01_MainWindow_2.setBounds(0, 67, 46, 30);
+		SignUpPanel_MainWindow.add(Icon01_MainWindow_2);
 		
 		JLabel Image01_MainWindow = new JLabel("");
 		Image01_MainWindow.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\output-onlinepngtools (2).png"));
