@@ -40,15 +40,19 @@ public class Main {
                         System.out.println("Error: Writing to file failed." + e.getMessage());
                     }
                     UserValidation = true;
+
                 }
 
             }
             reader.close();
             if (!UserValidation) {
                 System.out.println("Log in failed.");
+
             }
         } catch (IOException e) {
             e.printStackTrace();
+
         }
+
     }
 }
