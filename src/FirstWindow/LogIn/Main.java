@@ -13,7 +13,7 @@ public class Main {
         logInVerifier("Jose", "J3456");
     }
 
-    public static void logInVerifier(String username, String password) {
+    public static boolean logInVerifier(String username, String password) {
         boolean UserValidation = false;
         try {
             BufferedReader reader = new BufferedReader(
@@ -40,6 +40,8 @@ public class Main {
                         System.out.println("Error: Writing to file failed." + e.getMessage());
                     }
                     UserValidation = true;
+                    reader.close();
+                    return UserValidation;
 
                 }
 
@@ -47,12 +49,13 @@ public class Main {
             reader.close();
             if (!UserValidation) {
                 System.out.println("Log in failed.");
-
+                return UserValidation;
             }
         } catch (IOException e) {
             e.printStackTrace();
 
         }
+        return UserValidation;
 
     }
 }
