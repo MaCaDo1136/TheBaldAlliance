@@ -154,10 +154,10 @@ public class MainWidnow {
 		panelLogIn_MainWindow.add(Icon01_MainWindow);
 		Icon01_MainWindow.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-usuario-30.png"));
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setBounds(10, 124, 46, 39);
-		panelLogIn_MainWindow.add(lblNewLabel_1);
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-contraseña-30.png"));
+		JLabel icon02_Window = new JLabel("");
+		icon02_Window.setBounds(10, 124, 46, 39);
+		panelLogIn_MainWindow.add(icon02_Window);
+		icon02_Window.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-contraseña-30.png"));
 		
 		JPanel SignUpPanel_MainWindow = new JPanel();
 		SignUpPanel_MainWindow.setBorder(new BevelBorder(BevelBorder.RAISED, new Color(0, 0, 153), new Color(0, 0, 153), new Color(0, 0, 0), new Color(0, 0, 0)));
@@ -188,6 +188,11 @@ public class MainWidnow {
 		SignUpPanel_MainWindow.add(password_SignUp_MainWindow);
 			//Lógica del Botón de Sign Up
 		JButton btn_SignUp_MainWindow = new JButton("Sign Up");
+		btn_SignUp_MainWindow.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+			}
+		});
 		btn_SignUp_MainWindow.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -208,10 +213,15 @@ public class MainWidnow {
 		SignUpPanel_MainWindow.add(SingUpTitle_MainWindow);
 		SingUpTitle_MainWindow.setFont(new Font("Sitka Small", Font.BOLD, 24));
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-usuario-30.png"));
-		lblNewLabel_2.setBounds(10, 63, 46, 50);
-		SignUpPanel_MainWindow.add(lblNewLabel_2);
+		JLabel icon03_MainWindow = new JLabel("");
+		icon03_MainWindow.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-usuario-30.png"));
+		icon03_MainWindow.setBounds(10, 63, 46, 50);
+		SignUpPanel_MainWindow.add(icon03_MainWindow);
+		
+		JLabel icon04_MainWindow = new JLabel("");
+		icon04_MainWindow.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\icons8-contraseña-30.png"));
+		icon04_MainWindow.setBounds(10, 128, 46, 31);
+		SignUpPanel_MainWindow.add(icon04_MainWindow);
 		
 		JLabel Image01_MainWindow = new JLabel("");
 		Image01_MainWindow.setIcon(new ImageIcon("C:\\Users\\Diego\\Documents\\GitHub\\TheBaldAlliance\\img\\output-onlinepngtools (2).png"));
