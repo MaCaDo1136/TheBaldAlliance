@@ -23,15 +23,19 @@ public class Main {
                 if (username.equals(dB_username) && password.equals(dB_password)) {
                     System.out.println("Log in successful.");
                     UserValidation = true;
+                    
                 }
 
             }
             reader.close();
             if (!UserValidation) {
-                System.out.println("Log in failed.");
+                //System.out.println("Log in failed.");
+            	
             }
         } catch (IOException e) {
             e.printStackTrace();
+            
         }
+		
     }
 }
