@@ -14,14 +14,14 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         ArrayList<UserRegistration> userList = new ArrayList<>();
-        userList.add(new UserRegistration("Edu", "12345"));
+        userList.add(new UserRegistration("Albertus", "12345"));
 
         addUser(userList);
 
-        logInVerifier("Edu", "12345");
+        logInVerifier("Albertus", "12345");
     }
 
-    private static void addUser(ArrayList<UserRegistration> userlist) {
+    public static void addUser(ArrayList<UserRegistration> userlist) {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(
                     "C:\\Users\\Mario\\TheBaldAlliance\\src\\FirstWindow\\Database\\Db_Users.txt", true));

@@ -12,8 +12,6 @@ import javax.swing.BoxLayout;
 import javax.swing.UIManager;
 import javax.swing.border.SoftBevelBorder;
 
-import gui.OptionMenuWindow;
-
 import javax.swing.border.BevelBorder;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
